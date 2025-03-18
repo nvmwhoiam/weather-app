@@ -1,0 +1,152 @@
+@import "./general/root.scss";
+@import "./general/base.scss";
+@import "./general/mixin.scss";
+@import "./general/keyframes.scss";
+
+// v0.0.1
+
+.weather_dashboard {
+    .dashboard_header {
+        padding: var(--md-p);
+
+        h1 {
+            font-size: var(--font-size-xxlarge);
+            margin-bottom: var(--md-p);
+        }
+
+        .search_container {
+            @include Dflex(center);
+            gap: var(--md-p);
+
+            input {
+                max-width: 300px;
+            }
+        }
+    }
+
+    .current_weather {
+        .weather_card {
+            width: 100%;
+            max-width: 600px;
+            background-color: #183839;
+            padding: var(--md-p);
+            position: relative;
+
+            .city_name {
+                @include position(absolute, $top: var(--md-p), $left: var(--md-p));
+            }
+
+            .weather_info {
+                @include position(absolute, $top: var(--md-p), $right: var(--md-p));
+
+                .temperature {
+                    font-size: var(--font-size-xxxxlarge);
+                    color: var(--text-color);
+                    font-weight: bold;
+                }
+
+                .description {
+                    text-align: center;
+                }
+            }
+
+            .weather_icon {
+                @include posCenter(absolute);
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+
+            .location_info {
+                display: flex;
+                flex-direction: column;
+                @include position(absolute, $bottom: var(--md-p), $left: var(--md-p));
+
+                .current_time {
+                    font-size: var(--font-size-xxxxlarge);
+                    text-transform: uppercase;
+                }
+
+                .current_date {
+                    color: var(--text-color-secondary);
+                }
+            }
+
+            .weather_details {
+                @include Dflex(center);
+                gap: var(--md-p);
+                @include position(absolute, $bottom: var(--md-p), $right: var(--md-p));
+
+                .detail {
+                    text-align: center;
+
+                    p {
+                        margin-top: var(--xs-p);
+                        font-size: var(--font-size-large);
+                        color: var(--text-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .forecast {
+        padding: var(--md-p);
+
+        h2 {
+            font-size: var(--font-size-xlarge);
+            margin-bottom: var(--lg-p);
+        }
+
+        .forecast_container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--md-p);
+
+            .forecast_card {
+                background-color: #183839;
+                border-radius: var(--border-radius-light);
+                text-align: center;
+                padding: var(--md-p);
+
+                .date {
+                    font-size: var(--font-size-base);
+                    margin-bottom: var(--sm-p);
+                }
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                    margin: 0 auto var(--sm-p);
+                }
+
+                .temp {
+                    font-size: var(--font-size-large);
+                    font-weight: bold;
+                    color: var(--text-color);
+                    margin-bottom: var(--xs-p);
+                }
+
+                .description {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .weather_card {
+        height: 70dvh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .weather_card {
+        aspect-ratio: 16 / 9;
+        border-radius: var(--border-radius-light);
+    }
+}

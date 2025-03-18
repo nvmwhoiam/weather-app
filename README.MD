@@ -1,0 +1,84 @@
+# Weather Dashboard
+
+## Overview
+
+Weather Dashboard is a clean and intuitive weather application that allows users to search for any city and view detailed weather information. The app provides current weather conditions, including temperature, humidity, wind speed, and a 3-day forecast. It features a modern, responsive design with a dark mode interface and real-time updates.
+
+## Features
+
+- 🔍 City search functionality
+- 🌡️ Real-time temperature display
+- 💧 Humidity information
+- 💨 Wind speed data
+- 📅 3-day weather forecast
+- 🌙 Dark mode interface
+- 📱 Fully responsive design
+- ⏰ Local time display
+- 🎨 Modern and clean UI
+- ⚡ Fast and efficient performance
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/weather-app.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd weather-app
+```
+
+3. Open `index.html` in your web browser or use a local server.
+
+4. To use the weather API:
+   - Sign up for a free API key at [WeatherAPI.com](https://www.weatherapi.com/)
+   - Open `assets/js/script.js`
+   - Replace the API key in the line: `const API_KEY = apiKey; // Replace with your WeatherAPI key`
+
+## Usage
+
+1. Enter a city name in the search bar
+2. Click the search button or press Enter
+3. View the current weather information and 3-day forecast
+4. The app will automatically display the local time for the selected city
+
+## Project Structure
+
+```
+weather-app/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+├── index.html
+├── README.md
+└── LICENSE
+```
+
+## Acknowledgments
+
+- Weather data provided by [WeatherAPI.com](https://www.weatherapi.com/)
+- Icons and assets created for this project
+
+## Contact
+
+If you have any questions or need assistance, please feel free to reach out. You can contact me at [info@lynqis.io](mailto:info@lynqis.io) or open an issue on the [GitHub Repository](https://github.com/nvmwhoiam/weather-app).
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Author
+
+- nvmwhoiam
+- Website: [lynqis.io](https://lynqis.io)
+- GitHub: [GitHub Profile](https://github.com/nvmwhoiam/)

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="dark">
+    <main class="weather_dashboard">
+        <header class="dashboard_header">
+            <h1>Weather Dashboard</h1>
+            <div class="search_container">
+                <input type="search" placeholder="Search for a city..." aria-label="Search for a city" id="citySearch">
+                <button class="btn_btn" id="searchBtn">Search</button>
+            </div>
+        </header>
+
+        <section class="current_weather">
+
+            <div class="weather_card GRBg2FHmd9">
+
+                <h2 id="cityName" class="city_name">
+                    London
+                </h2>
+
+                <div class="weather_info">
+                    <p class="temperature" id="temperature">--°C</p>
+                    <p class="description" id="description">--</p>
+                </div>
+
+                <div class="weather_icon">
+                    <img src="./assets/images/clouds.svg" id="weatherIcon" alt="Weather svg">
+                </div>
+
+                <div class="location_info">
+                    <time datetime="" class="current_time" id="current_time"></time>
+                    <time datetime="" class="current_date" id="current_date"></time>
+                </div>
+
+                <div class="weather_details">
+                    <div class="detail">
+                        <small>Humidity</small>
+                        <p id="humidity">--%</p>
+                    </div>
+                    <div class="detail">
+                        <small>Wind Speed</small>
+                        <p id="windSpeed">-- km/h</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="forecast GRBg2FHmd9">
+            <h2>3-Day Forecast</h2>
+            <div class="forecast_container" id="forecastContainer"></div>
+        </section>
+    </main>
+
+    <script type="module" src="./assets/js/script.js"></script>
+</body>
+
+</html>
