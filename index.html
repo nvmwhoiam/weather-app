@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
     <meta name="description"
-        content="Weather Dashboard is a clean and intuitive weather application that allows users to search for any city and view detailed weather information. The app provides current weather conditions, including temperature, humidity, wind speed, and a 3-day forecast. It features a modern, responsive design with a dark mode interface and real-time updates.">
+        content="Weather Dashboard lets users search cities for current weather and a 3-day forecast. Features dark mode, real-time updates, and a responsive, modern design.">
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon-32x32.png">
-    <link rel="canonical" href="https://sadevworks.com/demo/weather-app">
+    <link rel="canonical" href="https://sadevworks.com/demo/weather-app/">
     <meta name="author" content="nvmwhoiam">
     <meta name="keywords"
         content="weather app, weather dashboard, weather forecast, current weather, city weather, temperature, humidity, wind speed, responsive design, dark mode, real-time updates">
@@ -19,13 +19,16 @@
     <title>Weather Dashboard | SADevWorks.com</title>
 </head>
 
-<body class="dark">
+<body>
+
     <main class="weather_dashboard">
         <header class="dashboard_header">
             <h1>Weather Dashboard</h1>
             <div class="search_container">
                 <input type="search" placeholder="Search for a city..." aria-label="Search for a city" id="citySearch">
-                <button class="btn_btn" id="searchBtn">Search</button>
+                <button class="btn_btn" id="searchBtn" aria-label="Search button">
+                    Search
+                </button>
             </div>
         </header>
 
@@ -33,13 +36,11 @@
 
             <div class="weather_card GRBg2FHmd9">
 
-                <h2 id="cityName" class="city_name">
-                    London
-                </h2>
+                <h2 id="cityName" class="city_name">London</h2>
 
                 <div class="weather_info">
-                    <p class="temperature" id="temperature">--°C</p>
-                    <p class="description" id="description">--</p>
+                    <p class="temperature" id="temperature">10°C</p>
+                    <p class="description" id="description">Clear</p>
                 </div>
 
                 <div class="weather_icon">
@@ -47,18 +48,19 @@
                 </div>
 
                 <div class="location_info">
-                    <time datetime="" class="current_time" id="current_time"></time>
-                    <time datetime="" class="current_date" id="current_date"></time>
+                    <time datetime="2025-06-08T02:07:00.202Z" class="current_time" id="current_time">3:07 am</time>
+                    <time datetime="2025-06-08T02:07:00.202Z" class="current_date" id="current_date">Sunday 8 Jun
+                        2025</time>
                 </div>
 
                 <div class="weather_details">
                     <div class="detail">
                         <small>Humidity</small>
-                        <p id="humidity">--%</p>
+                        <p id="humidity">94%</p>
                     </div>
                     <div class="detail">
                         <small>Wind Speed</small>
-                        <p id="windSpeed">-- km/h</p>
+                        <p id="windSpeed">17.6 km/h</p>
                     </div>
                 </div>
 
@@ -68,10 +70,28 @@
 
         <section class="forecast GRBg2FHmd9">
             <h2>3-Day Forecast</h2>
-            <div class="forecast_container" id="forecastContainer"></div>
+            <div class="forecast_container" id="forecastContainer">
+                <div class="forecast_card">
+                    <p class="date">Sun, Jun 8</p>
+                    <img src="//cdn.weatherapi.com/weather/64x64/day/176.png" alt="Patchy rain nearby">
+                    <p class="temp">12.7°C</p>
+                    <p class="description">Patchy rain nearby</p>
+                </div>
+                <div class="forecast_card">
+                    <p class="date">Mon, Jun 9</p>
+                    <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="Partly Cloudy ">
+                    <p class="temp">14.8°C</p>
+                    <p class="description">Partly Cloudy </p>
+                </div>
+                <div class="forecast_card">
+                    <p class="date">Tue, Jun 10</p>
+                    <img src="//cdn.weatherapi.com/weather/64x64/day/176.png" alt="Patchy rain nearby">
+                    <p class="temp">16.5°C</p>
+                    <p class="description">Patchy rain nearby</p>
+                </div>
+            </div>
         </section>
     </main>
-
     <script type="module" src="./assets/js/script.js"></script>
 </body>
 

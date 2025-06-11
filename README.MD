@@ -67,11 +67,11 @@ weather-app/
 
 ## Contact
 
-If you have any questions or need assistance, please feel free to reach out. You can contact me at [info@lynqis.io](mailto:info@lynqis.io) or open an issue on the [GitHub Repository](https://github.com/nvmwhoiam/weather-app).
+If you have any questions or need assistance, please do not hesitate to reach out. I apologize if any part of this setup is not clear; this is my first major project, and I am putting in continuous effort to improve it. Feel free to contact me at [info@sadevworks.com](mailto:info@sadevworks.com) or open an issue on the [GitHub Repository](https://github.com/nvmwhoiam/weather-app).
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
 ## License
 
@@ -79,6 +79,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Author
 
-- nvmwhoiam
-- Website: [lynqis.io](https://lynqis.io)
-- GitHub: [GitHub Profile](https://github.com/nvmwhoiam/)
+- Email: [info@sadevworks.com](mailto:info@sadevworks.com)
+- Website: [sadevworks.com](https://sadevworks.com)
+- GitHub: [@nvmwhoiam](https://github.com/nvmwhoiam/)
