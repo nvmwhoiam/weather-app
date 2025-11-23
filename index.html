@@ -5,32 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/index.css">
     <meta name="description"
         content="Weather Dashboard lets users search cities for current weather and a 3-day forecast. Features dark mode, real-time updates, and a responsive, modern design.">
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon-32x32.png">
-    <link rel="canonical" href="https://sadevworks.com/demo/weather-app/">
     <meta name="author" content="nvmwhoiam">
     <meta name="keywords"
-        content="weather app, weather dashboard, weather forecast, current weather, city weather, temperature, humidity, wind speed, responsive design, dark mode, real-time updates">
+        content="weather dashboard, weather app, real-time weather, city search, weather forecast, responsive design, dark mode, web development">
 
-    <meta name="robots" content="index, follow">
-    <title>Weather Dashboard | SADevWorks.com</title>
+    <meta name="robots" content="noindex, nofollow">
+    <title>Weather Dashboard with 3-Day Forecast & Dark Mode</title>
 </head>
 
 <body>
 
     <main class="weather_dashboard">
-        <header class="dashboard_header">
-            <h1>Weather Dashboard</h1>
-            <div class="search_container">
+
+        <header class="header_container">
+            <h1 class="app_title">Weather Dashboard</h1>
+        </header>
+
+        <div class="search_container">
+
+            <div class="block_wrapper">
+
                 <input type="search" placeholder="Search for a city..." aria-label="Search for a city" id="citySearch">
-                <button class="btn_btn" id="searchBtn" aria-label="Search button">
+
+                <button type="button" class="btn_btn" id="searchBtn" aria-label="Search button">
                     Search
                 </button>
+
             </div>
-        </header>
+
+        </div>
 
         <section class="current_weather">
 
@@ -44,7 +52,7 @@
                 </div>
 
                 <div class="weather_icon">
-                    <img src="./assets/images/clouds.svg" id="weatherIcon" alt="Weather svg">
+                    <img src="./assets/images/clear-day.svg" id="weatherIcon" alt="Weather svg">
                 </div>
 
                 <div class="location_info">
@@ -72,27 +80,38 @@
             <h2>3-Day Forecast</h2>
             <div class="forecast_container" id="forecastContainer">
                 <div class="forecast_card">
-                    <p class="date">Sun, Jun 8</p>
-                    <img src="//cdn.weatherapi.com/weather/64x64/day/176.png" alt="Patchy rain nearby">
-                    <p class="temp">12.7°C</p>
-                    <p class="description">Patchy rain nearby</p>
+                    <p class="date">Sun, Jul 6</p>
+                    <img src="./assets/images/rain-moderate.svg" alt="Moderate rain">
+                    <p class="temp">18.2°C</p>
+                    <p class="description">Moderate rain</p>
                 </div>
                 <div class="forecast_card">
-                    <p class="date">Mon, Jun 9</p>
-                    <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="Partly Cloudy ">
-                    <p class="temp">14.8°C</p>
-                    <p class="description">Partly Cloudy </p>
+                    <p class="date">Mon, Jul 7</p>
+                    <img src="./assets/images/rain-moderate.svg" alt="Moderate rain">
+                    <p class="temp">17.2°C</p>
+                    <p class="description">Moderate rain</p>
                 </div>
                 <div class="forecast_card">
-                    <p class="date">Tue, Jun 10</p>
-                    <img src="//cdn.weatherapi.com/weather/64x64/day/176.png" alt="Patchy rain nearby">
-                    <p class="temp">16.5°C</p>
-                    <p class="description">Patchy rain nearby</p>
+                    <p class="date">Tue, Jul 8</p>
+                    <img src="./assets/images/clear-day.svg" alt="Sunny">
+                    <p class="temp">18.5°C</p>
+                    <p class="description">Sunny</p>
                 </div>
             </div>
         </section>
+
+        <footer class="footer_container">
+
+            <p class="footer_content">
+                Copyright &copy; 2025. All Rights Reserved | Powered By <a href="https://sadevworks.com" hreflang="en"
+                    aria-label="Home page">SADevWorks.com</a>
+            </p>
+
+        </footer>
+
     </main>
-    <script type="module" src="./assets/js/script.js"></script>
+
+    <script type="module" src="./assets/js/index.js"></script>
 </body>
 
 </html>

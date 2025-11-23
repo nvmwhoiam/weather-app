@@ -1,30 +1,23 @@
-@import "./general/root.scss";
-@import "./general/base.scss";
+@import "./general/root.css";
+@import "./general/base.css";
 @import "./general/mixin.scss";
-@import "./general/keyframes.scss";
+@import "./general/keyframes.css";
 
-// v0.0.1
-
+// v0.0.4
 .weather_dashboard {
-    .dashboard_header {
+    .search_container {
         padding: var(--md-p);
 
-        h1 {
-            font-size: var(--font-size-xxlarge);
-            margin-bottom: var(--md-p);
-        }
-
-        .search_container {
-            @include Dflex(center);
+        .block_wrapper {
+            max-width: 600px;
+            display: flex;
             gap: var(--md-p);
-
-            input {
-                max-width: 300px;
-            }
+            margin: 0 auto;
         }
     }
 
     .current_weather {
+
         .weather_card {
             width: 100%;
             max-width: 600px;
@@ -132,6 +125,27 @@
                 .description {
                     text-transform: capitalize;
                 }
+            }
+        }
+    }
+
+    .header_container,
+    .footer_container {
+        text-align: center;
+
+        @media only screen and (max-width: 768px) {
+            & {
+                padding: var(--md-p);
+
+                .app_title {
+                    font-size: var(--font-size-2xlarge);
+                }
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            & {
+                padding: var(--xl-p) var(--md-p);
             }
         }
     }

@@ -1,23 +1,21 @@
 # Weather Dashboard
 
-## Overview
-
-Weather Dashboard is a clean and intuitive weather application that allows users to search for any city and view detailed weather information. The app provides current weather conditions, including temperature, humidity, wind speed, and a 3-day forecast. It features a modern, responsive design with a dark mode interface and real-time updates.
+Weather Dashboard lets users search cities for current weather and a 3-day forecast. Features dark mode, real-time updates, and a responsive, modern design.
 
 ## Features
 
-- 🔍 City search functionality
-- 🌡️ Real-time temperature display
-- 💧 Humidity information
-- 💨 Wind speed data
-- 📅 3-day weather forecast
-- 🌙 Dark mode interface
-- 📱 Fully responsive design
-- ⏰ Local time display
-- 🎨 Modern and clean UI
-- ⚡ Fast and efficient performance
+- City search functionality
+- Real-time temperature display
+- Humidity information
+- Wind speed data
+- 3-day weather forecast
+- Dark mode interface
+- Fully responsive design
+- Local time display
+- Modern and clean UI
+- Fast and efficient performance
 
-## Installation
+## How to Use
 
 1. Clone the repository:
 
@@ -35,7 +33,7 @@ cd weather-app
 
 4. To use the weather API:
    - Sign up for a free API key at [WeatherAPI.com](https://www.weatherapi.com/)
-   - Open `assets/js/script.js`
+   - Open `assets/js/index.js`
    - Replace the API key in the line: `const API_KEY = apiKey; // Replace with your WeatherAPI key`
 
 ## Usage
@@ -45,25 +43,12 @@ cd weather-app
 3. View the current weather information and 3-day forecast
 4. The app will automatically display the local time for the selected city
 
-## Project Structure
+## Technical Improvements
 
-```
-weather-app/
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── script.js
-│   └── images/
-├── index.html
-├── README.md
-└── LICENSE
-```
-
-## Acknowledgments
-
-- Weather data provided by [WeatherAPI.com](https://www.weatherapi.com/)
-- Icons and assets created for this project
+- **Custom Weather Icons Implementation**  
+  Replaced generic icons with custom-designed weather icons for better visual consistency.
+  - Improved UI/UX with tailored icons matching the app's design language.
+  - Added dynamic icon changes based on weather conditions (e.g., sunny, rainy, cloudy).
 
 ## Contact
 

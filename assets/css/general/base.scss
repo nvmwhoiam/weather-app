@@ -1,7 +1,6 @@
 @import "./mixin.scss";
 
-// v0.0.1
-
+// v0.0.3
 * {
     outline: 0;
     padding: 0;
@@ -489,100 +488,4 @@ a {
         width: 1140px;
         margin: 0 auto;
     }
-}
-
-@media (prefers-reduced-motion: reduce) {}
-
-.dropdown {
-    position: relative;
-
-    .icon_dropdown {
-        &_menu {
-            // width: 100%;
-            position: absolute;
-            min-width: 150px;
-            padding: var(--sm-p);
-            background-color: var(--background-color-secondary);
-            // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            // backdrop-filter: blur(10px);
-            border-radius: var(--border-radius-light);
-            z-index: 999;
-            display: flex;
-            flex-direction: column;
-            gap: var(--sm-p);
-
-            &[data-position="top_right"] {
-                bottom: calc(100% + var(--sm-p));
-                right: 0;
-            }
-
-            &[data-position="top_left"] {
-                bottom: calc(100% + var(--sm-p));
-                left: 0;
-            }
-
-            &[data-position="bot_right"] {
-                top: calc(100% + var(--sm-p));
-                right: 0;
-            }
-
-            &[data-position="bot_left"] {
-                top: calc(100% + var(--sm-p));
-                left: 0;
-            }
-
-            &_item {
-                display: flex;
-                font-size: 14px;
-
-                a,
-                label,
-                button {
-                    width: 100%;
-                    height: 100%;
-                    padding: var(--sm-p);
-                    text-align: center;
-
-                    i {
-                        margin-right: var(--sm-p);
-
-                    }
-                }
-            }
-
-            &[data-state="closed"] {
-                display: none;
-            }
-
-            &[data-state="open"] {
-                display: flex;
-                animation: visibilityVisible var(--animation-speed) forwards;
-            }
-
-            &[data-state="closing"] {
-                animation: visibilityHidden var(--animation-speed) forwards;
-            }
-        }
-    }
-
-    // @media only screen and (max-width: 768px) {
-    //     .icon_dropdown {
-    //         &_menu {
-    //             right: 0;
-    //         }
-    //     }
-    // }
-
-    @media only screen and (min-width: 768px) {}
-}
-
-input[type="file"] {
-    display: none;
-}
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
 }

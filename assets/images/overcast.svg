@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <svg height="800px" width="800px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 512 512"  xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#000000;}
-</style>
+	 viewBox="0 0 512 512"  xml:space="preserve"> 
 <g>
-	<path class="st0" d="M481.478,250.268c-15.889-15.902-37.029-26.616-60.508-29.59c-2.047-36.756-17.64-70-42.06-94.392
+	<path class="st0" fill="#FFFFFF" d="M481.478,250.268c-15.889-15.902-37.029-26.616-60.508-29.59c-2.047-36.756-17.64-70-42.06-94.392
 		c-26.192-26.219-62.529-42.474-102.519-42.465c-37.457-0.009-71.724,14.261-97.427,37.612
 		c-22.111,20.059-37.948,46.94-44.359,77.28c-6.212-1.033-12.575-1.616-19.066-1.616c-31.858-0.008-60.83,12.947-81.696,33.844
 		C12.955,251.804-0.004,280.776,0,312.634c-0.004,31.867,12.955,60.839,33.844,81.701c20.866,20.888,49.838,33.844,81.696,33.844
